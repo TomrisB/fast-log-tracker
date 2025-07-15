@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# FastAPI & logs
+log_record.txt
+*.db
+
+# IDE
+.vscode/
+.idea/
