@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Ekle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="mb-4">Add new log record</h2>
+    <form method="post" action="/log-form" class="row g-3">
+        <div class="col-md-6">
+            <input type="text" name="source_ip" class="form-control" placeholder="Source IP" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="destination" class="form-control" placeholder="Target" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="timestamp" class="form-control" placeholder="Zaman (YYYY-MM-DD HH:MM:SS)" required>
+        </div>
+        <div class="col-md-6">
+            <select name="record_type" class="form-select">
+                <option value="db">Database</option>
+                <option value="txt">File</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-success w-100">Save</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
